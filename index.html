@@ -1,0 +1,24 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Integer 3D Engine</title>
+  <style>
+    body { margin:0; background:#000; display:flex; align-items:center; justify-content:center; height:100vh; }
+    canvas { image-rendering:pixelated; cursor:grab; }
+    canvas:active { cursor:grabbing; }
+    #model-input, #record-btn { position:absolute; top:10px; z-index:1; }
+    #model-input { left:10px; }
+    #record-btn  { left:140px; }
+  </style>
+</head>
+<body>
+  <input id="model-input" type="file" accept=".glb">
+  <button id="record-btn">Record GIF</button>
+  <canvas id="viewport" width="320" height="240"></canvas>
+  <script src="renderer.js"></script>
+  <script src="gif.js"></script>
+  <script src="scene.js"></script>
+</body>
+</html>
